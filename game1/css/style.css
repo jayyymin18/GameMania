@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(../bg.jpg);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 50px;
+    right: 200px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+    color: black;
+}
+#highscoreBox{
+    position: absolute;
+    top: 5px;
+    right: 200px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+    color: black;
+}
+
+#board{
+    background: linear-gradient(#DCE35B, #45B649);
+    width: 90vmin;
+    height: 92vmin;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    border-radius: 10px;
+}
+
+.head{
+    background: linear-gradient(#e5bfbd, #d8d780);
+    border: 2px solid rgb(21, 0, 21);
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    background-color: purple;
+    border: .25vmin solid rgb(28, 2, 28);
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(yellow, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
